@@ -25,6 +25,7 @@ export default function Home({ loaderData: movies }: Route.ComponentProps) {
               viewTransition
               to={`/movies/${movie.id}`}
               className='overflow-hidden flex flex-col gap-2 group relative'
+              prefetch='viewport'
             >
               <img
                 className='card-image h-80 object-cover rounded-lg'

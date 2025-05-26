@@ -9,13 +9,13 @@ export interface Movie {
 }
 
 export async function getMovies() {
-  await new Promise((resolve) => setTimeout(resolve, 200));
+  // await new Promise((resolve) => setTimeout(resolve, 200));
 
   return movies;
 }
 
 export async function getMovieById(id: string) {
-  await new Promise((resolve) => setTimeout(resolve, 200));
+  // await new Promise((resolve) => setTimeout(resolve, 200));
 
   return movies.find((movie) => movie.id === id);
 }
